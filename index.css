@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.vr-logo-image {
+    height: 40px;
+    width: 50px;
+}
+
+.text-color1 {
+    color: #323f4b !important;
+}
+
+
+.main-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInBg 2s ease-in-out forwards;
+}
+
+/* Background fade animation */
+@keyframes fadeInBg {
+    from { opacity: 0; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.main-heading {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: slideDown 1.5s ease forwards;
+}
+
+/* Heading animation */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.view-more-button {
+    background-color: #1a2137;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 1.8s ease forwards;
+}
+
+/* Button entrance animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover animation */
+.view-more-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+}
+
+
+.feture-head {
+    font-family: "Roboto", sans-serif;
+    color: #1f2933;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 38px;
+    position: relative;
+    animation: fadeDown 1s ease;
+}
+
+/* Underline animation */
+.feture-head::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #6366f1;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 4px;
+    animation: lineGrow 1.2s ease forwards;
+}
+
+@keyframes lineGrow {
+    from { width: 0; opacity: 0; }
+    to { width: 80px; opacity: 1; }
+}
+
+.feature-image {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* Image animation on hover */
+.feature-image:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.card-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #1f2933;
+    margin-top: 12px;
+    font-weight: bold;
+    animation: fadeUp 1s ease;
+}
+
+.card-discription {
+    font-family: "Roboto", sans-serif;
+    color: #7b8794;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fadeUp 1.2s ease;
+}
+
+/* Card container animation */
+.p-3 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    animation: fadeCard 1s ease;
+}
+
+/* Card hover effect */
+.p-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #f8f9ff;
+}
+
+.highlight {
+    color: #1f2933;
+    font-weight: 700;
+}
+
+/* Keyframe animations */
+@keyframes fadeCard {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.toolkit-background {
+    background-color: #f9fbfe;
+    width: 100vw;
+    padding: 40px 0;
+    animation: fadeBg 1.2s ease-in-out;
+}
+
+@keyframes fadeBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.toolkit-background h1 {
+    font-family: "Roboto", sans-serif;
+    color: #1f2933;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tool-image {
+    height: 220px;
+    width: 180px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    animation: fadeUp 1.2s ease;
+}
+
+/* Hover animation */
+.tool-image:hover {
+    transform: scale(1.12);
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+}
+
+.toolkit-card-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #1f2933;
+    margin-top: 12px;
+    font-weight: 600;
+    animation: fadeUp 1.4s ease;
+}
+
+/* Smooth fade up */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card wrapper hover effect */
+.text-center {
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.text-center:hover {
+    transform: translateY(-10px);
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.vr-image {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Image Hover Effect */
+.vr-image:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.vr-main-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #1f2933;
+    font-size: 32px;
+    margin-bottom: 12px;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.vr-para {
+    font-family: "Roboto", sans-serif;
+    color: #7b8794;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+    animation: fadeText 1.3s ease;
+}
+
+@keyframes fadeText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Button animation */
+.btn-dark {
+    background-color: #1a2137 !important;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeText 1.4s ease;
+}
+
+.btn-dark:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.vr-contact-background {
+    background-color: #222b36;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeBg 1.2s ease-in-out;
+}
+
+/* Background fade */
+@keyframes fadeBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.vr-contact-image {
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.45s ease, filter 0.45s ease;
+    animation: fadeUp 1.2s ease;
+}
+
+/* Image hover effect */
+.vr-contact-image:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 25px rgba(255, 255, 255, 0.15));
+}
+
+.vr-contact-heading {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.3;
+    margin-top: 20px;
+    animation: slideIn 1s ease;
+}
+
+/* Heading animation */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* CONTACT US button */
+.btn-outline-light {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.35s ease;
+    animation: fadeUp 1.4s ease;
+}
+
+/* Button hover glow */
+.btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: #222b36 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(255, 255, 255, 0.25);
+}
+
+/* Fade up animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+.trending-background {
+    background-color: #f9fbfe;
+    padding: 50px 0;
+    animation: fadeBg 1.2s ease-in-out;
+}
+
+@keyframes fadeBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.blog-heading {
+    color: #1f2933;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    animation: fadeUp 1.2s ease;
+}
+
+/* Hover animation for images */
+.blog-image:hover {
+    transform: scale(1.07);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.blog-detail-head {
+    color: #55627a;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.blog-para {
+    color: #323f4b;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* READ MORE */
+.blog-anchor-color {
+    color: #1754a1;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* READ MORE hover */
+.blog-anchor-color:hover {
+    color: #0d3c7a;
+}
+
+/* Cards */
+.shadow-lg, .shadow {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    animation: fadeCard 1.2s ease;
+}
+
+/* Card hover lift */
+.shadow-lg:hover,
+.shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+@keyframes fadeCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* View All button */
+.blog-button {
+    color: #ffffff;
+    background-color: #1754a1;
+    border: none;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    height: 45px;
+    width: 120px;
+    margin-top: 10px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Button hover effect */
+.blog-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(23, 84, 161, 0.4);
+}
+
+/* Image + heading fade */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.product-main-heading {
+    color: #1f2933;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+/* Background image containers */
+.vr-headset-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.vr-controller-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card style */
+.product-card {
+    width: 100%;
+    height: 400px;   /* better height for cards */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Text */
+.product-card-title,
+.product-card-price {
+    color: #ffffff;
+    font-family: "Roboto";
+}
+
+/* Buttons */
+.buy-now-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* View all button alignment */
+.product-view-button {
+    text-align: right;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        height: 300px;
+    }
+}
+
+
+
+
+
+.VR-footer-section-background {
+    background-color: #19232d;
+    padding: 25px;
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+    width: 70px;
+}
+
+/* Circular social icons */
+.VR-footer-section-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #202b36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* Icons */
+.icon {
+    color: #5a7184;
+    font-size: 20px;
+}
+
+/* Text */
+.vr-footer-section-text {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vr-footer-section-heading {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Lists */
+.vr-footer-section-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Horizontal line */
+.hr-line {
+    border-color: #5a7184;
+}
+
+/* Copyright */
+.vr-footer-section-copyright {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .VR-footer-section-icon {
+        margin-right: 5px;
+    }
+}
+
+
+.delivery-payment-section {
+    padding: 40px 20px;
+    background-color: #f8fafc;
+}
+
+.delivery-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+    color: #1f2933;
+}
+
+.delivery-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #7b8794;
+    margin-bottom: 20px;
+}
+
+.delivery-img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.payment-icons .payment-card {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.payment-card:last-child {
+    margin-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .delivery-heading {
+        text-align: center;
+    }
+
+    .delivery-description {
+        text-align: center;
+    }
+
+    .payment-icons {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
